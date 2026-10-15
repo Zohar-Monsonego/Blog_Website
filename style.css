@@ -1,0 +1,236 @@
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(210, 210, 226);
+}
+
+.header_h1 {
+  margin-left: 38%;
+  font-size: 45px;
+  background: linear-gradient(to right, #a020f0, #e830a0, #8b5cf6);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 25px rgba(216, 70, 200, 0.4);
+}
+
+.header_p {
+  color: black;
+  width: 30%;
+  margin-left: 34%;
+  text-align: center;
+}
+
+.cards_section {
+  display: grid;
+  width: 1000px;
+  grid-template-columns: 0.8fr;
+  grid-template-rows: repeat(5, 200px);
+  margin-left: 21%;
+  /* border: 2px solid rgb(136, 40, 56); */
+  gap: 25px;
+}
+
+.card {
+  position: relative;
+  transition:
+    transform 0.3s ease,
+    box-shadow;
+}
+
+.card1 {
+  background-color: rgb(222, 201, 235);
+  border-radius: 15px;
+  border: 1px solid rgb(36, 6, 54);
+}
+
+.card2 {
+  background-color: rgb(248, 220, 248);
+  border-radius: 15px;
+  border: 1px solid rgb(227, 97, 227);
+}
+
+.card3 {
+  background-color: rgb(206, 220, 241);
+  border-radius: 15px;
+  border: 1px solid rgb(82, 142, 231);
+}
+
+.card4 {
+  background-color: rgb(214, 243, 238);
+  border-radius: 15px;
+  border: 1px solid rgb(112, 235, 215);
+}
+
+.card5 {
+  background-color: rgb(243, 237, 214);
+  border-radius: 15px;
+  border: 1px solid rgb(236, 208, 96);
+}
+
+#card1_h2 {
+  position: absolute;
+  color: black;
+  display: inline-block;
+  margin-left: 24px;
+  font-family: cursive;
+}
+
+#card2_h2 {
+  position: absolute;
+  color: black;
+  display: inline-block;
+  margin-left: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#card3_h2 {
+  position: absolute;
+  color: black;
+  display: inline-block;
+  margin-left: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#card4_h2 {
+  position: absolute;
+  color: black;
+  display: inline-block;
+  margin-left: 24px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+#card5_h2 {
+  position: absolute;
+  color: black;
+  display: inline-block;
+  margin-left: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards_icons {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  margin-left: 700px;
+  margin-top: 20px;
+}
+
+#light_icon {
+  display: inline-block;
+  background: none;
+  border: none;
+  margin-left: 0px;
+  font-size: 18px;
+}
+
+#light_checkbox {
+  size: 25px;
+  margin-left: 5px;
+  background-color: none;
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#card:has(#light_checkbox:checked) {
+  background-color: black;
+}
+
+#card:has(#light_checkbox:checked) #card1_h2 {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) #card2_h2 {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) #card3_h2 {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) #card4_h2 {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) #card5_h2 {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) .in_card_p {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) .night_light_icon {
+  color: white;
+}
+
+#card:has(#light_checkbox:checked) #light_icon {
+  color: white;
+}
+
+.night_light_icon {
+  display: inline-block;
+  color: black;
+  font-size: 18px !important;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.white_box {
+  display: inline-block;
+  width: 35px;
+  height: 25px;
+  background-color: white;
+  border: 2px solid rgb(150, 147, 147);
+  border-radius: 10px;
+}
+
+.delete_icon {
+  font-size: 18px !important;
+  margin-left: 8px;
+  margin-top: 3px;
+}
+
+.white_box:hover {
+  background-color: rgb(175, 23, 23);
+  border: 2px solid rgb(157, 19, 19);
+}
+
+.white_box:hover .delete_icon {
+  color: white;
+}
+
+.in_card_p {
+  color: rgb(88, 86, 86);
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.in_card_p::first-letter {
+  font-weight: bold;
+  color: rgb(65, 130, 165);
+}
+
+.in_card_p::after {
+  content: ".";
+}
+
+.in_card_p::first-line {
+  font-weight: bold;
+}
